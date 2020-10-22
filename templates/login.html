@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+로그인
+{% endblock %}
+
+{% block headline %}
+{{title}}
+{% endblock %}
+
+{% block content%}
+
+
+<!-- <form method="post" action="/login">
+   <table>
+       <tr>
+           <th>id</th>
+           <td>
+               <input type="text" name="id" value="{{id}}">
+           </td>
+           <th>password</th>
+           <td>
+               <input type="password" name="pass">
+           </td>
+       </tr>
+       <th></th>
+       <td>
+           <input type="submit" value="Login">
+       </td>
+   </table>
+</form> -->
+<form method="post" action="/login">
+   <div class="form-group">
+     <label for="exampleInputEmail1">로그인 ID</label>
+     <input type="text" name="id" class="form-control mb-4 p-4" id="exampleInputEmail1" aria-describedby="emailHelp">
+   </div>
+   <div class="form-group">
+     <label for="exampleInputPassword1">password</label>
+     <input type="password" name="pass" class="form-control mb-4 p-4" id="exampleInputPassword1">
+   </div>
+   <input type="submit" class="btn btn-primary btn-lg" value="로그인">
+</form>
+{% endblock %}
+{% block footer %}
+&copy;2019106050유카만듬
+{% endblock %}
